@@ -1,0 +1,82 @@
+.home button {
+  height: 100px;
+  width: 200px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-92 {
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+      var(--_p, 100%) / 300% no-repeat,
+    #000000;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+    calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+  outline-offset: 0.1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9Q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0.1em 0.3em;
+}
+
+.hover-characters {
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.385);
+  position: absolute;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 1225px;
+}
+
+.hover-characters img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home-pic img {
+  width: 99vw;
+  height: 100%;
+}
+
+.home-buttons {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}

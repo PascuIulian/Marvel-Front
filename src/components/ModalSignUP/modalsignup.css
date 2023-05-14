@@ -1,0 +1,31 @@
+.modal-root {
+  color: red;
+  /* Pour que la modal prenne tout l'écran : */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /* Pour placer la modal tout en haut à gauche une fois en position relative */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Mettre un background noir et transparent : */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  background-color: white;
+  width: 700px;
+  height: 500px;
+  padding: 10px 50px;
+  /* Placer le button en haut à droite de la modal : */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.modal button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
