@@ -23,7 +23,7 @@ const CharacterCard = ({ character }) => {
           )}
         </article>
       </Link>
-      <button>☆</button>
+      {/* <button>☆</button> */}
     </div>
   );
 };
