@@ -25,3 +25,7 @@
   align-items: center;
   margin: 10px;
 } */
+
+.comic {
+  position: fixed;
+}

@@ -15,7 +15,7 @@ const ModalComics = ({ setVisibleComic }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://site--marvel-back--qq6svdx7d7wt.code.run/comics`
+          `https://site--marvel-back--qq6svdx7d7wt.code.run/comic/5fce13de78edeb0017c92d68`
         );
         setData(response.data);
         setIsLoading(false);
@@ -27,7 +27,7 @@ const ModalComics = ({ setVisibleComic }) => {
     console.log(data.results);
   }, []);
   return (
-    <div className="modal-root">
+    <div className="modal-root comic">
       <div className="modal">
         <button
           onClick={() => {
@@ -36,6 +36,9 @@ const ModalComics = ({ setVisibleComic }) => {
         >
           X
         </button>
+        <div>
+          Je voulais afficler la photo + description mais j'ai pas reussi
+        </div>
       </div>
     </div>
   );

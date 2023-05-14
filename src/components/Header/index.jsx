@@ -38,23 +38,25 @@ const Header = ({
           </button>
         </Link>
       </div>
-      {token ? (
-        <Link to="/">
-          <button
-            className="button-28"
-            onClick={() => {
-              handleToken();
-            }}
-          >
-            Deconexion
-          </button>
+      <div>
+        {token ? (
+          <Link to="/">
+            <button
+              className="button-28"
+              onClick={() => {
+                handleToken();
+              }}
+            >
+              Deconexion
+            </button>
+          </Link>
+        ) : (
+          <div className="div-vide"></div>
+        )}
+        <Link to="/favorites">
+          <button className="button-28">Favorites</button>
         </Link>
-      ) : (
-        <div className="div-vide"></div>
-      )}
-      <Link to="/favorites">
-        <button>Favorites</button>
-      </Link>
+      </div>
     </header>
   );
 };
