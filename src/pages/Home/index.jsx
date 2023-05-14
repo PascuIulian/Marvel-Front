@@ -19,12 +19,12 @@ const Home = ({
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `site--marvel-back--qq6svdx7d7wt.code.run/characters`
+          `https://site--marvel-back--qq6svdx7d7wt.code.run/characters`
         );
         setData(response.data);
 
         const response2 = await axios.get(
-          `site--marvel-back--qq6svdx7d7wt.code.run/comics`
+          `https://site--marvel-back--qq6svdx7d7wt.code.run/comics`
         );
         setComicData(response2.data);
       } catch (error) {
