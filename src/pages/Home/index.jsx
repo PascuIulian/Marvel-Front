@@ -18,10 +18,14 @@ const Home = ({
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/characters`);
+        const response = await axios.get(
+          `site--marvel-back--qq6svdx7d7wt.code.run/characters`
+        );
         setData(response.data);
 
-        const response2 = await axios.get(`http://localhost:3000/comics`);
+        const response2 = await axios.get(
+          `site--marvel-back--qq6svdx7d7wt.code.run/comics`
+        );
         setComicData(response2.data);
       } catch (error) {
         console.log(error.message);

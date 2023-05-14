@@ -36,7 +36,7 @@ const Comics = ({
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/comics?title=${searchComic}&limit=${limit}&skip=${pageCharacters}`
+          `site--marvel-back--qq6svdx7d7wt.code.run/comics?title=${searchComic}&limit=${limit}&skip=${pageCharacters}`
         );
         setData(response.data);
         setIsLoading(false);

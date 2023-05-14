@@ -29,11 +29,14 @@ const ModalSignUP = ({ setVisibleSignup, handleToken, token }) => {
     setErrorMessage("");
 
     try {
-      const response = await axios.post("http://localhost:3000/user/signup", {
-        email: email,
-        username: username,
-        password: password,
-      });
+      const response = await axios.post(
+        "site--marvel-back--qq6svdx7d7wt.code.run/user/signup",
+        {
+          email: email,
+          username: username,
+          password: password,
+        }
+      );
 
       if (response.data.token) {
         handleToken(response.data.token);

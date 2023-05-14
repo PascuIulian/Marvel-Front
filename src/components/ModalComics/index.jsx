@@ -14,7 +14,9 @@ const ModalComics = ({ setVisibleComic }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/comics`);
+        const response = await axios.get(
+          `site--marvel-back--qq6svdx7d7wt.code.run/comics`
+        );
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
